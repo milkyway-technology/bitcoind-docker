@@ -44,7 +44,7 @@ jobs:
         uses: docker/metadata-action@v5
         id: metadata
         with:
-          images: ${{ env.REGISTRY_URL }}/${{ github.repository }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY_URL }}/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}
 
       - name: Build Docker images
         uses: docker/build-push-action@v5
